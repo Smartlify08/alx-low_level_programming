@@ -7,6 +7,7 @@
 int main(void)
 {
 	int alphaValue;
+
 	for (alphaValue = 122; alphaValue > 96; alphaValue--)
 	{
 		putchar(alphaValue);
