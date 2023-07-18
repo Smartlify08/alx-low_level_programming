@@ -10,11 +10,11 @@ int main(void)
 	char letter;
 	for (letter = 'a'; letter <= 'z'; letter++)
 	{
-		if(letter == 'e')
+		if (letter == 'e')
 		{
 			continue;
 		}
-		else if(letter == 'q')
+		else if (letter == 'q')
 		{
 			continue;
 		}
