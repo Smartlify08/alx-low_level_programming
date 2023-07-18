@@ -7,6 +7,7 @@
 int main(void)
 {
 	int hexNumber, hexLetter;
+
 	for (hexNumber = 48; hexNumber <= 57; hexNumber++)
 	{
 		putchar(hexNumber);
