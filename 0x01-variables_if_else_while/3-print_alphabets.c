@@ -3,9 +3,9 @@
  * main - Print alphabets in lowercase
  *        then in uppercase
  *
- * Return - always 0(success)
+ * Return: always 0(success)
  */
-int main (void)
+int main(void)
 {
 	char letter;
 
