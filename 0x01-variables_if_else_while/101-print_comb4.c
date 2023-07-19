@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
-  * main - Print possible combinations 
-  *        of numbers
-  *
-  * Return: always 0(success)
-  */
+ * main - Print possible combinations
+ *        of numbers
+ *
+ * Return: always 0(success)
+ */
 int main(void)
 {
 	int a, b, c;
