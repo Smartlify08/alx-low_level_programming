@@ -3,7 +3,7 @@
 /**
  * print_alphabet - print alphabets a-z
  *
- * Return: always 0 
+ * Return: always 0
  */
 int  print_alphabet(void)
 {
