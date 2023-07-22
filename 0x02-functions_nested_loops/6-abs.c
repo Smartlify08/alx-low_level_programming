@@ -1,5 +1,6 @@
 #include "main.h"
-/** _abs - print absoulte value of numbers
+/**
+ * _abs - print absoulte value of numbers
  *
  * @x: number to be checked if negative or positive
  *
