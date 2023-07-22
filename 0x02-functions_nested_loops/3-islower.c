@@ -1,13 +1,9 @@
 #include "main.h"
 /**
  * _islower - check if value is lowercase 
- *            and return 1 otherwise return
- *            0
- * Parameter:c 
- * Description:
- * represents the hexadecimal
- * value that will be checked
- *
+ * 
+ * @c: the character that represents the ascii
+ *     value to be checked
  * Return: 0 if true, 0 otherwise.
  */
 int _islower(int c)
