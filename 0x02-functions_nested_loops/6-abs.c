@@ -5,8 +5,8 @@
  * @x: number to be checked if negative or positive
  *
  * Return: x * -1 if x is negative,
- * 		x * 1 if x is positive,
- *	       	0 if x is zero.
+ *		x * 1 if x is positive,
+ *		0 if x is zero.
  */
 int _abs(int x)
 {
