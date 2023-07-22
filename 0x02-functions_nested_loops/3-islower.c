@@ -3,6 +3,10 @@
  * _islower - check if value is lowercase 
  *            and return 1 otherwise return
  *            0
+ * Parameter:c - represents the hexadecimal
+ *               value that will be checked
+ *
+ * Return: 0 if true, 0 otherwise.
  */
 int _islower(int c)
 {
