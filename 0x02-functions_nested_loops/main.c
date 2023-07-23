@@ -13,15 +13,7 @@ int main (void)
 
 	  int r;
 
-    	r = _isalpha('H');
-    	_putchar(r + '0');
-    	r = _isalpha('o');
-    	_putchar(r + '0');
-    	r = _isalpha(108);
-    	_putchar(r + '0');
-    	r = _isalpha(';');
-    	_putchar(r + '0');
-	int r;
+    	int r;
 	 r = print_sign(98);
         _putchar(',');
         _putchar(' ');
@@ -46,8 +38,17 @@ int main (void)
         _putchar(r + '0');
 	*/
 	 int r;
+	r = _isalpha('H');
+    	_putchar(r + '0');
+    	r = _isalpha('o');
+    	_putchar(r + '0');
+    	r = _isalpha(108);
+    	_putchar(r + '0');
+    	r = _isalpha(';');
+    	_putchar(r + '0');
 
-    r = _abs(-1);
+	return 0;
+    /*r = _abs(-1);
     printf("%d\n", r);
     r = _abs(0);
     printf("%d\n", r);
@@ -56,5 +57,5 @@ int main (void)
     r = _abs(-98);
     printf("%d\n", r);
 	_putchar('\n');
-	return (0);
+	return (0);*/
 }
