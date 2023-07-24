@@ -68,6 +68,6 @@ int main (void)
 	return (0);*/
 	
 	/*jack_bauer();*/
-	time_table();
+	times_table();
 	return (0);
 }

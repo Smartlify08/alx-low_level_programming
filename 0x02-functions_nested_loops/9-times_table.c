@@ -4,7 +4,7 @@
  *
  * Return: always 0 successful
  */
-void time_table(void)
+void times_table(void)
 {
 	int number, count;
 
