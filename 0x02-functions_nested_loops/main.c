@@ -67,6 +67,7 @@ int main (void)
 	_putchar('\n');
 	return (0);*/
 	
-	jack_bauer();
+	/*jack_bauer();*/
+	time_table();
 	return (0);
 }
