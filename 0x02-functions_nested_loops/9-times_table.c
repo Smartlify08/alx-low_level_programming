@@ -4,7 +4,7 @@
  *
  * Return: always 0 successful
  */
-int time_table(void)
+void time_table(void)
 {
 	int number, count;
 
@@ -33,6 +33,5 @@ int time_table(void)
 		}
 		_putchar('\n');
 	}
-	return (0);
 }
 
