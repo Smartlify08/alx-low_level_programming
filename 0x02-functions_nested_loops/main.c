@@ -68,6 +68,10 @@ int main (void)
 	return (0);*/
 	
 	/*jack_bauer();*/
-	times_table();
+/*	times_table();*/
+	int n;
+
+	n= add(72,26);
+	printf("%d\n",n);
 	return (0);
 }
