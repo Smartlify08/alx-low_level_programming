@@ -13,8 +13,10 @@ void print_to_98(int n)
 
 	increment = (n < 98) ? 1 : -1;
 	for (placeholder = n;
-			placeholder <= 98 || placeholder > 98;
-		       	placeholder += increment)
+			placeholder <= 98
+			||
+			placeholder > 98;
+			placeholder += increment)
 	{
 	if (placeholder != 98)
 		{
