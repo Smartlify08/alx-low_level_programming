@@ -69,9 +69,9 @@ int main (void)
 	
 	/*jack_bauer();*/
 /*	times_table();*/
-	int n;
 
-	n= add(72,26);
-	printf("%d\n",n);
+
+
+	print_to_98(-10);
 	return (0);
 }
