@@ -17,14 +17,14 @@ void print_to_98(int n)
 			placeholder += increment)
 	{
 	if (placeholder != 98)
-		{
-			printf("%d, ", placeholder);
-		}
+	{
+		printf("%d, ", placeholder);
+	}
 	if (placeholder == 98)
-		{
-			printf("%d\n", placeholder);
-			break;
-		}
+	{
+		printf("%d\n", placeholder);
+		break;
+	}
 	}
 }
 
