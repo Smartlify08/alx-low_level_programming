@@ -14,18 +14,14 @@ void print_to_98(int n)
 
 	for( placeholder = n; placeholder <= 98 || placeholder > 98; placeholder += increment)
 	{
-		int absoluteValue = (placeholder < 0) ? -placeholder : placeholder;
-		if (placeholder < 0)
+
+	if (placeholder != 98)
 		{
-			printf("-");
+			printf("%d, ", placeholder );
 		}
-		if (absoluteValue != 98)
+		if(placeholder == 98)
 		{
-			printf("%d, ", absoluteValue);
-		}
-		if(absoluteValue == 98)
-		{
-			printf("%d\n", absoluteValue);
+			printf("%d\n", placeholder);
 			break;
 		}
 	}
