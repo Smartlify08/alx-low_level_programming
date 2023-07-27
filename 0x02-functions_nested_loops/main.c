@@ -71,7 +71,6 @@ int main (void)
 /*	times_table();*/
 
 
-
-	print_times_table(-98);
+	print_multiples();
 	return (0);
 }
