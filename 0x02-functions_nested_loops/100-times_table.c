@@ -9,7 +9,7 @@
  */
 void print_times_table(int n)
 {
-	int number;
+	int numbe;
 	for(number = 0; number <= n; number++)
 	{
 		int count;
