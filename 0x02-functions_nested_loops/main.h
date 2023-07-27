@@ -12,3 +12,4 @@ int add(int i, int j);
 void print_to_98(int n);
 void print_times_table(int n);
 void print_multiples(void);
+int main(void);
