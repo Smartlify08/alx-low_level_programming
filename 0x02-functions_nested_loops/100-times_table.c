@@ -10,9 +10,10 @@
 void print_times_table(int n)
 {
 	int number;
-	for(number = 0; number <= n; number++)
+	for (number = 0; number <= n; number++)
 	{
 		int count;
+
 		if (n > 15 || n < 0)
 		{
 			break;
@@ -20,11 +21,12 @@ void print_times_table(int n)
 		for (count = 0; count <= n; count++)
 		{
 			int result = (number * count);
-			if(result >= 10 && !(result > 99))
+
+			if (result >= 10 && !(result > 99))
 			{
 				printf(",  ");
 			}
-			if(result < 10 && count != 0)
+			if (result < 10 && count != 0)
 			{
 				printf(",   ");
 			}
