@@ -10,6 +10,7 @@
 void print_times_table(int n)
 {
 	int number;
+
 	for (number = 0; number <= n; number++)
 	{
 		int count;
