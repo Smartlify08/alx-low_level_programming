@@ -18,6 +18,7 @@ int main(void)
 	int i;
 
 	n = 50;
+
 	printf("%lu, %lu, ", firstTerm, secondTerm);
 	for (i = 2; i < n; i++)
 	{
