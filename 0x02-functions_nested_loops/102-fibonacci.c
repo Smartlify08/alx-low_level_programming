@@ -2,11 +2,11 @@
 int main(void)
 {
 	int n;
-	n = 50;
 	int firstTerm = 1;
 	int secondTerm = 2;
 	int nextTerm;
 	int i;
+	n = 50;
 	printf("%d, %d, ", firstTerm, secondTerm);
 	for (i = 2; i < n; i++)
 	{
