@@ -1,9 +1,9 @@
 #include <stdio.h>
 int main(void)
 {
-	unsigned int n = 4000000;
+	int n = 4000000;
 
-	unsigned int i;
+	int i;
 
 	unsigned int firstTerm = 0;
 
@@ -20,6 +20,7 @@ int main(void)
 		secondTerm = nextTerm;
 		if (secondTerm % 2 == 0)
 		{
+			printf("%d",i);
 			sum = sum + secondTerm;
 
 		}
