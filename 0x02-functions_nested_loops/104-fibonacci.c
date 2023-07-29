@@ -1,22 +1,30 @@
 #include <stdio.h>
+/**
+ * main - print first 98 fibonacci numbers
+ *
+ * Return: always 0 (successful)
+ *
+ */
 int main(void)
 {
-	int n = 98;
+	long unsigned int n = 98;
 
-	int i;
+	long unsigned int i;
 
-	int firstTerm = 1;
+	long unsigned int firstTerm = 1;
 
-	int secondTerm = 2;
+	long unsigned int secondTerm = 2;
 
-	int nextTerm;
+	long unsigned int nextTerm;
 
-	for (i = 0; i < n; i++)
+	printf("%lu, ", firstTerm);
+	printf("%lu, ", secondTerm);
+	for (i = 0; i <= n; i++)
 	{
 		nextTerm = firstTerm + secondTerm;
 		firstTerm = secondTerm;
 		secondTerm = nextTerm;
-		printf("%u", secondTerm);
+		printf("%lu", secondTerm);
 		if (i < n - 1)
 		{
 			printf(", ");
