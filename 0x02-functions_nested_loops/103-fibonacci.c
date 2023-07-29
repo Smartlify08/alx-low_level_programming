@@ -7,9 +7,7 @@
  */
 int main(void)
 {
-	int n = 4000000;
-
-	int i;
+	unsigned int n = 4000000;
 
 	unsigned int firstTerm = 0;
 
