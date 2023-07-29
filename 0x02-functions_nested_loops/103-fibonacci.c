@@ -25,7 +25,6 @@ int main(void)
 		if (secondTerm % 2 == 0)
 		{
 			sum = sum + secondTerm;
-
 		}
 	}
 	printf("%u",sum);
