@@ -27,7 +27,7 @@ int main(void)
 			sum = sum + secondTerm;
 		}
 	}
-	printf("%u",sum);
+	printf("%u", sum);
 	printf("\n");
 	return (0);
 }
