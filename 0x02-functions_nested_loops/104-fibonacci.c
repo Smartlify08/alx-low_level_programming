@@ -7,15 +7,15 @@
  */
 int main(void)
 {
-	long unsigned int n = 98;
+	unsigned long int n = 98;
 
-	long unsigned int i;
+	unsigned long int i;
 
-	long unsigned int firstTerm = 1;
+	unsigned long int firstTerm = 1;
 
-	long unsigned int secondTerm = 2;
+	unsigned long int secondTerm = 2;
 
-	long unsigned int nextTerm;
+	unsigned long int nextTerm;
 
 	printf("%lu, ", firstTerm);
 	printf("%lu, ", secondTerm);
