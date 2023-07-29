@@ -1,4 +1,10 @@
 #include <stdio.h>
+/**
+ * main - print sum of fibonacci numbers less than
+ *        4,000,000
+ *
+ * Return: 0(successful)
+ */
 int main(void)
 {
 	int n = 4000000;
@@ -13,14 +19,13 @@ int main(void)
 
 	unsigned int sum = 0;
 
-	for (i = 2; i < n; i++)
+	while (secondTerm <= n)
 	{
 		nextTerm = firstTerm + secondTerm;
 		firstTerm = secondTerm;
 		secondTerm = nextTerm;
 		if (secondTerm % 2 == 0)
 		{
-			printf("%d",i);
 			sum = sum + secondTerm;
 
 		}
