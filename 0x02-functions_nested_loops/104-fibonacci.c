@@ -18,7 +18,7 @@ int main(void)
 	unsigned long int firstTerm1, firstTerm2, secondTerm1, secondTerm2;
 
 	printf("%lu, ", firstTerm);
-	printf("%lu, ", secondTerm);
+	printf("%lu", secondTerm);
 	for (i = 1; i < 91; i++)
 	{
 		secondTerm = secondTerm + firstTerm;
