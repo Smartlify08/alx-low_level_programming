@@ -15,20 +15,37 @@ int main(void)
 
 	unsigned long int secondTerm = 2;
 
-	unsigned long int nextTerm;
+	unsigned long int nextTerm, firstTerm1, firstTerm2, secondTerm1, secondTerm2;
 
 	printf("%lu, ", firstTerm);
 	printf("%lu, ", secondTerm);
-	for (i = 2; i < n; i++)
+	for (i = 1; i < 91; i++)
 	{
-		nextTerm = firstTerm + secondTerm;
-		firstTerm = secondTerm;
-		secondTerm = nextTerm;
-		printf("%lu", secondTerm);
-		if (i < n - 1)
-		{
-			printf(", ");
-		}
+		secondTerm = secondTerm + firstTerm;
+		firstTerm = secondTerm - firstTerm;
+
+		printf(", %lu", secondTerm); 
+	}
+
+	firstTerm1 = firstTerm / 1000000000;
+	firstTerm2 = firstTerm % 1000000000;
+	secondTerm1 = secondTerm / 1000000000;
+	secondTerm2 = secondTerm % 1000000000;
+
+	for (i = 92; i <= n; i++)
+	{
+		                printf(", %lu",secondTerm1 +
+						(secondTerm2 / 1000000000));
+
+                printf("%lu", secondTerm2 % 1000000000);
+
+                secondTerm1 = secondTerm1 + firstTerm1;
+                firstTerm1 = secondTerm1 - firstTerm1;
+
+
+
+                secondTerm2 = firstTerm2 + secondTerm2;
+                firstTerm2 = secondTerm2 - firstTerm2;
 	}
 	printf("\n");
 	return (0);
