@@ -15,7 +15,7 @@ int main(void)
 
 	unsigned long int secondTerm = 2;
 
-	unsigned long int nextTerm, firstTerm1, firstTerm2, secondTerm1, secondTerm2;
+	unsigned long int firstTerm1, firstTerm2, secondTerm1, secondTerm2;
 
 	printf("%lu, ", firstTerm);
 	printf("%lu, ", secondTerm);
