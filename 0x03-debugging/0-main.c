@@ -3,8 +3,8 @@
 #include <time.h>
 #include <stdlib.h>
 /**
- * main - check if correct for correct output
- *
+ * main - check if correct output is printed
+ * 
  * Return: always 0(success)
  */
 int main(void)
