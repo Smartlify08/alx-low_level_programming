@@ -5,7 +5,7 @@
 /**
  * main - check if correct for correct output
  *
- * Return: 0(successful)
+ * Return: always 0(success)
  */
 int main(void)
 {
