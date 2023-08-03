@@ -1,6 +1,12 @@
 #include "main.h"
 int _isupper(int c)
 {
-	int n = c >= 97 ? 0 : 1;
-	return n;
+	if (c >= 97 || c < 65 || (c > 90 && c < 97))
+	{
+		return 0;
+	}
+	else
+	{
+		return 1;
+	}
 }
