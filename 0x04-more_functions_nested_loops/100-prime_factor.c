@@ -30,7 +30,7 @@ int main(void)
 			}
 			if (checkPrime == 1)
 			{
-				if (f - 50829599)
+				if (f - 50829599 == 0)
 				{
 					printf("f:%lu ",f);	
 				}
