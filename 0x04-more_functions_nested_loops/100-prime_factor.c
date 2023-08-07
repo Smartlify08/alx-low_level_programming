@@ -12,6 +12,7 @@ int main(void)
 	unsigned long int f;
 	unsigned long int g;
 	unsigned long int checkPrime;
+	unsigned long int largestPrime;
 
 	n = 612852475143;
 
@@ -30,13 +31,11 @@ int main(void)
 			}
 			if (checkPrime == 1)
 			{
-				if (f - 50829599 == 0)
-				{
-					printf("f:%lu ",f);	
-				}
+				largestPrime = f;
 			}
 		}
 	}
+	printf("%lu",largestPrime);
 	printf("\n");
 	return (0);
 }
