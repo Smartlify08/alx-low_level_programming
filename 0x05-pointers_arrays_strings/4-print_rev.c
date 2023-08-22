@@ -11,7 +11,7 @@ void print_rev(char *s)
 	{
 		length = i;
 	}
-	printf("%d", length);
+
 	if (length != 0)
 	{
 
