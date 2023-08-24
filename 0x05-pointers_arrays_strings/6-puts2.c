@@ -1,8 +1,16 @@
 #include "main.h"
 
+
+/**
+ * puts2 - print even characters
+ *
+ * @str: represents string
+ *
+ */
 void puts2(char *str)
 {
 	int i;
+
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		if (i % 2 == 0)
