@@ -3,23 +3,8 @@
 
 char *_strcat(char *dest, char *src)
 {
-	char *storeDest = dest;
-
-	/*
-	   while (*dest != '\0')
-	{
-		dest++;
-	}
-
-	while (*src != '\0')
-	{
-		*dest = *src;
-		dest++;
-		src++;
-	}
-	*/
-
 	int i;
+	char *storeDest = dest;
 
 	for (i = 0; *dest != '\0'; i++)
 	{
@@ -34,5 +19,6 @@ char *_strcat(char *dest, char *src)
 	}
 
 	*dest = '\0';
-	return (storeDest);
+
+	return(storeDest);
 }
