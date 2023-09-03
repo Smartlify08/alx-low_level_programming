@@ -3,21 +3,36 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int i;
 	char *storeDest = dest;
 
-	for (i = 0; dest[i] != '\0'; i++)
+	/*
+	   while (*dest != '\0')
 	{
-		storeDest++;
+		dest++;
 	}
 
-	for (i = 0; src[i] != '\0'; i++)
+	while (*src != '\0')
 	{
-		*storeDest = *src;
-		storeDest++;
+		*dest = *src;
+		dest++;
+		src++;
+	}
+	*/
+
+	int i;
+
+	for (i = 0; *dest != '\0'; i++)
+	{
+		dest++;
+	}
+
+	for (i = 0; *src != '\0'; i++)
+	{
+		*dest = *src;
+		dest++;
 		src++;
 	}
 
-	*storeDest = '\0';
+	*dest = '\0';
 	return (storeDest);
 }
