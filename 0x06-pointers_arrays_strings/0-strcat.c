@@ -1,17 +1,25 @@
 #include "main.h"
 #include <stdio.h>
 
+/**
+ * _strcat - concatenate two strings
+ *
+ * @dest: represents destination string
+ * @src: represents source string
+ *
+ * Return: storeDest to return destination string
+ */
+
 char *_strcat(char *dest, char *src)
 {
-	int i;
 	char *storeDest = dest;
 
-	for (i = 0; *dest != '\0'; i++)
+	while (*dest != '\0')
 	{
 		dest++;
 	}
 
-	for (i = 0; *src != '\0'; i++)
+	while (*src != '\0')
 	{
 		*dest = *src;
 		dest++;
@@ -20,5 +28,5 @@ char *_strcat(char *dest, char *src)
 
 	*dest = '\0';
 
-	return(storeDest);
+	return (storeDest);
 }
