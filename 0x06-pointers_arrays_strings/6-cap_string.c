@@ -7,6 +7,11 @@ char *cap_string(char *s)
 	char seperators[] = {' ', '\n', '\t', ',', ';', '.', '!', '?',     '"', '(', ')', '{', '}'};
 	int i;
 	int j;
+	
+	if (*s >= 'a' && *s <= 'z')
+	{
+		*s -= 32;
+	}
 
 	for (i = 0; *s;)
 	{
