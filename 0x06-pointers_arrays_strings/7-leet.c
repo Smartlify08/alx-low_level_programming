@@ -21,11 +21,9 @@ char *leet(char *str)
 				break;
 			}		
 		}
-
-		if (i == 5)
-		{
-			str++;
-		}
+		
+		str++;
+		
 	}
 	return (original_str);
 }
