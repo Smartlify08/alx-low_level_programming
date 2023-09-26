@@ -9,6 +9,7 @@
 char *leet(char *str)
 {
 	char *original_str = str;
+
 	int i;
 
 	char arr[3][5] = {
@@ -25,11 +26,11 @@ char *leet(char *str)
 			{
 				*str = arr[2][i];
 				break;
-			}		
+			}
 		}
-		
+
 		str++;
-		
+
 	}
 	return (original_str);
 }
