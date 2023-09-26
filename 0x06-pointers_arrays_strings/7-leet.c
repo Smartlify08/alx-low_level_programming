@@ -4,7 +4,6 @@ char *leet(char *str)
 {
 	char *original_str = str;
 	int i;
-	int j;
 
 	char arr[3][5] = {
 		{'A', 'E', 'O', 'T', 'L'},
@@ -14,17 +13,19 @@ char *leet(char *str)
 
 	for (; *str; )
 	{
-		for (i = 0; i < 3; i++)
+		for (i = 0; i < 5; i++)
 		{
-			for (j = 0; j < 5; j++)
+			if (*str == arr[0][i] || *str == arr[1][i])
 			{
-				if (*str == arr[i][j])
-				{
-					*str = arr[2][j];
-				}
-			}
+				*str = arr[2][i];
+				break;
+			}		
 		}
-		str++;
+
+		if (i == 5)
+		{
+			str++;
+		}
 	}
 	return (original_str);
 }
