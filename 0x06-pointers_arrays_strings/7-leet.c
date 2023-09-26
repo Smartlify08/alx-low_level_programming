@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * leet - encode strings
+ * @str: string
+ * Return: Original string
+*/
+
 char *leet(char *str)
 {
 	char *original_str = str;
