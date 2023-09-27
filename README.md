@@ -1,1 +1,1 @@
-##This is a c pprogramming repo
+##Thus is a c pprogramming repo
