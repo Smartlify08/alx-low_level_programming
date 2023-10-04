@@ -1,6 +1,12 @@
 #include <stdio.h>
 #include "main.h"
 
+/**
+ * _atoi - coverts string to integer
+ * @s: string
+ * Return: sign * string
+**/
+
 int _atoi(char *s)
 {
 	int sign;
