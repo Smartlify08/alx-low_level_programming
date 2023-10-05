@@ -1,6 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * main - print arguments passed
+ * @argc: argument count
+ * @argv: argument vector: pointer to strings
+ * Return: 0 successful
+**/
+
 int main(int argc, char *argv[])
 {
 	int i;
