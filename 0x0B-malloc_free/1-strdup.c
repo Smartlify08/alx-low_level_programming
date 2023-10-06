@@ -1,11 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ *_strdup - duplicate string and return pointer to memory space
+ * @str: string
+ * Return: NULL , duplicateStr
+**/
+
 char *_strdup(char *str)
 {
 	int len, i;
 
 	char *duplicateStr;
+
 	len = 0;
 	
 	if (str == NULL)
