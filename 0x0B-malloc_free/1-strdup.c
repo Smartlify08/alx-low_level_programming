@@ -7,6 +7,11 @@ char *_strdup(char *str)
 
 	char *duplicateStr;
 	len = 0;
+	
+	if (str == NULL)
+	{
+		return (NULL);
+	}
 
 	for (len = 0; str[len]; len++)
 	{
@@ -17,7 +22,7 @@ char *_strdup(char *str)
 
 	for (i = 0; i < len; i++)
 	{
-		duplicateStr[i] = *(str++);
+		duplicateStr[i] = str[i];
 	}
 
 	if (duplicateStr == NULL)
