@@ -24,6 +24,7 @@ char *_strdup(char *str)
 	{
 		duplicateStr[i] = str[i];
 	}
+	duplicateStr[len] = '\0';
 
 	if (duplicateStr == NULL)
 	{
