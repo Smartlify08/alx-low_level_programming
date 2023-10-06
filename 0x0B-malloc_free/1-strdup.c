@@ -20,16 +20,17 @@ char *_strdup(char *str)
 
 	duplicateStr = malloc(len + 1);
 
-	for (i = 0; i < len; i++)
-	{
-		duplicateStr[i] = str[i];
-	}
-	duplicateStr[len] = '\0';
-
 	if (duplicateStr == NULL)
 	{
 		return (NULL);
 	}
+
+	for (i = 0; i < len; i++)
+	{
+		duplicateStr[i] = str[i];
+	}
+
+	duplicateStr[len] = '\0';
 
 	return (duplicateStr);
 }
