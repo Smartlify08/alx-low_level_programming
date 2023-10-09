@@ -17,7 +17,7 @@ int getLen_s1(char *s1)
 	{
 		return (0);
 	}
-	
+
 	for (i = 0; s1[i]; i++)
 	{
 		len_1++;
