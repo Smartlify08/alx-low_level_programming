@@ -5,7 +5,7 @@
 /**
  * getLen_s1 - calculates the length of the first string
  * @s1: first string
- * Return: len_1 if s1 is not NULL
+ * Return:0(unsucessful), len_1 if s1 is not NULL
  **/
 
 int getLen_s1(char *s1)
@@ -13,6 +13,11 @@ int getLen_s1(char *s1)
 	int len_1 = 0;
 	int i;
 
+	if (s1 == NULL)
+	{
+		return (0);
+	}
+	
 	for (i = 0; s1[i]; i++)
 	{
 		len_1++;
@@ -30,6 +35,12 @@ int getLen_s2(char *s2)
 {
 	int len_2 = 0;
 	int i;
+
+	if (s2 == NULL)
+	{
+		return (0);
+	}
+
 
 	for (i = 0; s2[i]; i++)
 	{
@@ -78,6 +89,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		len_2 = getLen_s2(s2);
 	}
+
 	len_sum = getLenSum(s1, s2);
 	concatenated_str = malloc(len_sum + 1);
 	if (concatenated_str == NULL)
