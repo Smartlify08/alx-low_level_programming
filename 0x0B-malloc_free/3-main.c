@@ -25,17 +25,13 @@ int main(void)
 {
     int **grid;
 
-    grid = alloc_grid(4, 2);
+    grid = alloc_grid(0, 0);
     if (grid == NULL)
     {
         return (1);
     }
 
-    print_grid(grid, 4, 2);
+    print_grid(grid, 0, 0);
     printf("\n");
-    grid[0][2] = 98;
-    grid[1][2] = 402;
-
-    print_grid(grid, 4, 2);
     return (0);
 }
