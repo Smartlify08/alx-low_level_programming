@@ -3,7 +3,7 @@
 
 /**
  * free_grid - frees memory of already allocated grid
- * @grid: allocated 2-Dimensional grid 
+ * @grid: allocated 2-Dimensional grid
  * @height: height of grid(rows)
 **/
 
