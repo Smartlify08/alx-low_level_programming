@@ -54,11 +54,21 @@ int getLen_s2(char *s2)
  * Return: len_sum
  **/
 
-int getLenSum(char *s1, char *s2)
+int getLenSum(char *s1, char *s2, unsigned int n)
 {
 	int len_1 = getLen_s1(s1);
-	int len_2 = getLen_s2(s2);
-	int len_sum = len_1 + len_2;
+	unsigned int len_2 = getLen_s2(s2);
+	int len_sum;
+
+	if (n >= len_2)
+	{
+		len_sum = len_1 + len_2; 
+	}
+
+	else
+	{
+		len_sum = len_1 + n;
+	}
 
 	return (len_sum);
 }
@@ -83,7 +93,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	len_1 = (s1 != NULL) ? getLen_s1(s1) : 0;
 	len_2 = (s2 != NULL) ? getLen_s2(s2) : 0;
 
-	len_sum = getLenSum(s1, s2);
+	len_sum = getLenSum(s1, s2, n);
 	concatenated_str = malloc(len_sum + 1);
 	if (concatenated_str == NULL)
 		return (NULL);
