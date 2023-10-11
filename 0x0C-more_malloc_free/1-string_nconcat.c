@@ -52,6 +52,7 @@ int getLen_s2(char *s2)
  * getLenSum - calculates the sum of the length of s1 and s2
  * @s1: first string
  * @s2: second string
+ * @n: number of bytes to be printed
  * Return: len_sum
  **/
 
@@ -66,7 +67,7 @@ int getLenSum(char *s1, char *s2, unsigned int n)
 		n = len_2;
 	}
 
-	len_sum = len_1 + n; 
+	len_sum = len_1 + n;
 	return (len_sum);
 }
 
@@ -89,7 +90,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	len_1 = (s1 != NULL) ? getLen_s1(s1) : 0;
 	len_2 = (s2 != NULL) ? getLen_s2(s2) : 0;
-	
+
 
 	len_sum = getLenSum(s1, s2, n);
 	concatenated_str = malloc(len_sum + 1);
@@ -100,13 +101,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		concatenated_str[index++] = s1[i];
 	}
-	if (s2 != NULL)
+
+
+	for (i = 0; s2 != NULL && s2[i] && n > 0; i++)
 	{
-		for (i = 0; s2[i] && n > 0; i++)
-		{
-			concatenated_str[index++] = s2[i];
-			n--;
-		}
+		concatenated_str[index++] = s2[i];
+		n--;
 	}
 	concatenated_str[len_sum] = '\0';
 	return (concatenated_str);
