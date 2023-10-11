@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -8,8 +9,8 @@
  **/
 int getLen_s1(char *s1)
 {
-	int len_1 = 0;
-	int i;
+	unsigned int len_1 = 0;
+	unsigned int i;
 
 	if (s1 == NULL)
 	{
@@ -21,6 +22,7 @@ int getLen_s1(char *s1)
 		len_1++;
 	}
 
+
 	return (len_1);
 }
 
@@ -31,8 +33,8 @@ int getLen_s1(char *s1)
  **/
 int getLen_s2(char *s2)
 {
-	int len_2 = 0;
-	int i;
+	unsigned int len_2 = 0;
+	unsigned int i;
 
 	if (s2 == NULL)
 	{
@@ -56,9 +58,9 @@ int getLen_s2(char *s2)
 
 int getLenSum(char *s1, char *s2, unsigned int n)
 {
-	int len_1 = getLen_s1(s1);
+	unsigned int len_1 = getLen_s1(s1);
 	unsigned int len_2 = getLen_s2(s2);
-	int len_sum;
+	unsigned int len_sum;
 
 	if (n >= len_2)
 	{
