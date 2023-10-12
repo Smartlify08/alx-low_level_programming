@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "dog.h"
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * _strlen - get length of string
@@ -32,11 +33,11 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 
 	if (d == NULL)
 	{
-		return(NULL);
+		return;
 	}
 
-	d->name = malloc(_strlen(d->name));
-	d->owner = malloc(_strlen(d->owner));
+	d->name = malloc(_strlen(name) + 1);
+	d->owner = malloc(_strlen(owner) + 1);
 	
 	if (d->name == NULL || d->owner == NULL)
 	{
