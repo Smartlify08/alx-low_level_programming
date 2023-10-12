@@ -2,6 +2,13 @@
 #include <stdlib.h>
 #include <string.h>
 
+/**
+ * _calloc - allocates memory based on members and size
+ * @nmemb: Number of elements
+ * @size: size of each element
+ * Return: pointer to memory
+**/
+
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	unsigned int n = nmemb;
