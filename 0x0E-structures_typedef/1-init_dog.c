@@ -11,7 +11,8 @@
 
 int _strlen(char *str)
 {
-	int i,len = 0;
+	int i, len = 0;
+
 	for (i = 0; str[i]; i++)
 	{
 		len = i;
@@ -38,7 +39,7 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 
 	d->name = malloc(_strlen(name) + 1);
 	d->owner = malloc(_strlen(owner) + 1);
-	
+
 	if (d->name == NULL || d->owner == NULL)
 	{
 		free(d->owner);
