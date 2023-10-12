@@ -3,6 +3,23 @@
 #include <stdlib.h>
 
 /**
+ * _strlen - get length of string
+ * @str: string
+ * Return: length
+**/
+
+int _strlen(char *str)
+{
+	int i,len = 0;
+	for (i = 0; str[i]; i++)
+	{
+		len = i;
+	}
+	return (len);
+}
+
+
+/**
  * init_dog - initializes a struct dog
  * @d: instance for struct dog
  * @name: name of dog
@@ -12,7 +29,22 @@
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	d->name = name;
+
+	if (d == NULL)
+	{
+		return(NULL);
+	}
+
+	d->name = malloc(_strlen(d->name));
+	d->owner = malloc(_strlen(d->owner));
+	
+	if (d->name == NULL || d->owner == NULL)
+	{
+		free(d->owner);
+		free(d->name);
+		return;
+	}
+	strcpy(d->name, name);
 	d->age = age;
-	d->owner = owner;
+	strcpy(d->owner, owner);
 }
